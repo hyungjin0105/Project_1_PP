@@ -4,7 +4,9 @@ import java.util.Scanner;
 public class Menu {
     Scanner input = new Scanner(System.in);
     public void start() {
+
         int menuNum = 9;
+
         while(menuNum != 0) {
             System.out.println("*** 영단어 마스터 ***\n");
             System.out.print("********************\n" +
