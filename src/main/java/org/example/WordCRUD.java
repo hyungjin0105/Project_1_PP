@@ -43,8 +43,8 @@ public class WordCRUD implements ICRUD{
         for(int i = 1; i < list.size(); i++){
             System.out.println((i+1) + " ");
             System.out.println(list.get(i).toString());
-            System.out.println("--------------------------------");
         }
+        System.out.println("--------------------------------");
     }
     @Override
     public void addWord() {
