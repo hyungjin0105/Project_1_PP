@@ -3,6 +3,11 @@ import java.util.Scanner;
 
 public class Menu {
     Scanner input = new Scanner(System.in);
+    WordCRUD wordCrud;
+
+    public Menu() {
+        wordCrud = new WordCRUD(input);
+    }
 
     public int selectMenu(){
             System.out.println("*** 영단어 마스터 ***\n");
@@ -25,10 +30,10 @@ public class Menu {
             int menu = selectMenu();
             if(menu == 0) break;
             if(menu == 4) {
-                //create
+                wordCrud.addWord();
             }
             else if(menu == 1){
-                //list
+                wordCrud.listAll();
             }
             System.out.println(menu);
         }
