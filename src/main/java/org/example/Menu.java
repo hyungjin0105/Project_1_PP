@@ -26,6 +26,7 @@ public class Menu {
             return input.nextInt();
     }
     public void start() {
+        wordCrud.loadFile();
         while(true){
             int menu = selectMenu();
             if(menu == 0) break;
@@ -34,6 +35,12 @@ public class Menu {
             }
             else if(menu == 1){
                 wordCrud.listAll();
+            }
+            else if(menu == 5){
+                wordCrud.update();
+            }
+            else if(menu == 6){
+                wordCrud.delete();
             }
             System.out.println(menu);
         }
