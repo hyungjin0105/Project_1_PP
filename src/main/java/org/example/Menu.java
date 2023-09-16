@@ -42,6 +42,9 @@ public class Menu {
             else if(menu == 6){
                 wordCrud.delete();
             }
+            else if(menu == 7){
+                wordCrud.saveFile();
+            }
             System.out.println(menu);
         }
 
