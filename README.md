@@ -1,3 +1,3 @@
 # Project_1_PP
 
-![picture](screenshot/1.png)
+![image 1](screenshot/1.png)
