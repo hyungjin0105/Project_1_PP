@@ -36,6 +36,12 @@ public class Menu {
             else if(menu == 1){
                 wordCrud.listAll();
             }
+            else if(menu == 2){
+                wordCrud.searchLevel();
+            }
+            else if(menu == 3){
+                wordCrud.searchWord();
+            }
             else if(menu == 5){
                 wordCrud.update();
             }
